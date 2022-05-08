@@ -1,0 +1,4 @@
+MONGO_URL = "mongo db atlas url"
+MONGO_NAME = "databse name"
+JWT_SECRET = "your super secret"
+JWT_DURATION = "365d"
