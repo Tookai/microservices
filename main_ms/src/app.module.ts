@@ -7,6 +7,8 @@ import { configValidationSchema } from './config.schema';
 import { PostsModule } from './posts/posts.module';
 import { UsersModule } from './users/users.module';
 import { CommentsModule } from './comments/comments.module';
+import { ConversationsModule } from './conversations/conversations.module';
+import { MessagesModule } from './messages/messages.module';
 
 @Module({
   imports: [
@@ -39,6 +41,8 @@ import { CommentsModule } from './comments/comments.module';
     AuthModule,
     PostsModule,
     CommentsModule,
+    ConversationsModule,
+    MessagesModule,
   ],
   controllers: [],
   providers: [],
