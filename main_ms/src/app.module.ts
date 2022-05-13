@@ -3,12 +3,10 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import { AuthModule } from './auth/auth.module';
+import { CommentsModule } from './comments/comments.module';
 import { configValidationSchema } from './config.schema';
 import { PostsModule } from './posts/posts.module';
 import { UsersModule } from './users/users.module';
-import { CommentsModule } from './comments/comments.module';
-import { ConversationsModule } from './conversations/conversations.module';
-import { MessagesModule } from './messages/messages.module';
 
 @Module({
   imports: [
@@ -41,8 +39,6 @@ import { MessagesModule } from './messages/messages.module';
     AuthModule,
     PostsModule,
     CommentsModule,
-    ConversationsModule,
-    MessagesModule,
   ],
   controllers: [],
   providers: [],
