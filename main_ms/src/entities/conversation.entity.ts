@@ -18,7 +18,7 @@ export class Conversation extends BaseEntity {
   uuid: string;
 
   @Column()
-  users: [string];
+  users: string[];
 
   @CreateDateColumn({ type: 'timestamp' })
   createdAt: Date;

@@ -23,12 +23,13 @@ export class UsersService {
     return await User.findOne({ where: { username } });
   }
 
-  async findAllUsers(user) {
-    console.log(user);
-    return User.find();
+  async findAllUsers(currentUser: User) {
+    const users = await User.find();
+    const filtered = users.filter((user) => user.uuid !== currentUser.uuid);
+    return filtered;
   }
 
   async findUserByUuid(uuid: string) {
-    return User.findOne({ where: { uuid } });
+    return await User.findOne({ where: { uuid } });
   }
 }
