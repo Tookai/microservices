@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class Conversation extends BaseEntity {
+export class Message extends BaseEntity {
   @ObjectIdColumn()
   id: ObjectID;
 
